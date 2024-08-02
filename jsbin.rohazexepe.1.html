@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by anonymous (http://jsbin.com/rohazexepe/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wake the fuck up samurai</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('https://media0.giphy.com/media/h5NLPVn3rg0Rq/200.webp?cid=ecf05e478nevzrk8qmlu7590ok4b2siyg738v8xbopf1cctk&ep=v1_gifs_search&rid=200.webp&ct=g');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .center-button {
+      display: block;
+      margin: 0 auto;
+    }
+    .red-text {
+      color: red;
+    }
+    .gif {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      display: none;
+    }
+  </style>
+  <script>
+    function showGifs() {
+      for (let i = 0; i < 25; i++) {
+        let gif = document.createElement('img');
+        gif.src = 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjd2YmY4cHB2eDNqbnIxc2cwZnJkcXgzZDR2YmhhOGk1YXFhbzkydiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QE5Z3FfR6skeIVjxvy/giphy.webp';
+        gif.className = 'gif';
+        gif.style.top = Math.random() * window.innerHeight + '4px';
+        gif.style.left = Math.random() * window.innerWidth + '4px';
+        document.body.appendChild(gif);
+        gif.style.display = 'block';
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1 class="red-text" align="center">Hello</h1>
+  <button class="center-button" onclick="showGifs()">Are you sure?</button>
+  <p class="red-text">Please Don't press the button</p>
+</body>
+</html>
